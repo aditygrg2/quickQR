@@ -5,11 +5,10 @@ const app = express();
 const cookieParser = require('cookie-parser');
 const db = require('./config/mongoose');
 
-const port = 8000;
+const port = 10;
 
 app.use(cookieParser());
 app.use(express.urlencoded());
-
 
 //Use express router
 app.use('/',require('./routes'));
@@ -19,7 +18,6 @@ app.set('views','./views');
 
 app.use(express.static('assets'));
 //We have to use this else ejs never gets the stylesheets!
-
 
 app.listen(port,function(err){
     if(err){
