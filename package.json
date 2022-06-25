@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "postcss assets/CSS/tailwind.css -o assets/CSS/styles.css",
+    "dev": "postcss assets/CSS/tailwind.css -o assets/CSS/styles.css",
     "start": "npm run dev && nodemon index.js"
   },
   "author": "Aditya Garg",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.7",
+    "cookie-parser": "^1.4.6",
     "ejs": "^3.1.8",
     "postcss": "^8.4.14",
     "postcss-cli": "^9.1.0",
