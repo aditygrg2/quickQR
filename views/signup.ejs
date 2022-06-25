@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <input type="text">
-        <input type="email">
-        <input type="password">
-        <button type="submit"></button>
+    <form action="users/create-user" method="post">
+        <input type="text" placeholder="Enter name" required name="name">
+        <input type="email" placeholder="Enter your email!" required name="email">
+        <input type="password" placeholder="Enter password" required name="password">
+        <button type="submit" value="Sign-Up">Submit</button>
     </form>
 </body>
 </html>
