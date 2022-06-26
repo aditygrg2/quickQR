@@ -5,7 +5,7 @@ const app = express();
 const cookieParser = require('cookie-parser');
 const db = require('./config/mongoose');
 
-const port = 10;
+const port = 8000;
 
 app.use(cookieParser());
 app.use(express.urlencoded());
@@ -28,4 +28,4 @@ app.listen(port,function(err){
     else{
         console.log(`Server is up and running at port ${port}`);
     }
-})
+});

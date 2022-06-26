@@ -520,6 +520,9 @@ video {
 .table {
   display: table;
 } 
+.grid {
+  display: grid;
+} 
 .contents {
   display: contents;
 } 
@@ -532,8 +535,22 @@ video {
 .resize {
   resize: both;
 } 
+.content-center {
+  align-content: center;
+} 
+.rounded-2xl {
+  border-radius: 1rem;
+} 
 .border {
   border-width: 1px;
+} 
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+} 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 } 
 .text-slate-700 {
   --tw-text-opacity: 1;
