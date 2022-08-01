@@ -12,5 +12,5 @@ db.on('error',function(){console.error.bind("Error connecting to db")});
 
 //up, running, print!
 db.once("open",function(){
-    console.log("Connected to the database mongoose!")
+    console.log("Connected to the database mongoose!");
 })

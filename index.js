@@ -15,9 +15,13 @@ app.use('/',require('./routes'));
 
 app.set('view engine','ejs');
 app.set('views','./views');
+//We have to use this else ejs never gets the stylesheets!
+// app.use(expressLayouts);
+// app.set('layout extractstyles',true);
+// app.set('layout extractScripts',true);
 
 app.use(express.static('assets'));
-//We have to use this else ejs never gets the stylesheets!
+
 
 app.listen(port,function(err){
     if(err){
